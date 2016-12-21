@@ -160,6 +160,11 @@ button:focus {
 	color: #fff;
 }
 
+.codrops-demos li {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
 
 /* Content */
 

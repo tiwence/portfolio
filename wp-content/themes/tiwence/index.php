@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-<div class="row">
+<div class="content">
 
-<div class="col-sm-8 blog-main">
-
+	<div class="grid">
 	<?php 
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -11,11 +10,13 @@
 
 	endwhile; endif; 
 	?>
+	</div>
 
-</div><!-- /.blog-main -->
+	<div class="preview">
+		<button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+		<div class="description description--preview"></div>
+	</div>
 
-<?php get_sidebar(); ?>
-
-</div><!-- /.row -->
+</div>
 
 <?php get_footer() ?>

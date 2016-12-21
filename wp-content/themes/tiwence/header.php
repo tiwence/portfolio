@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js csstransitions">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,13 @@
 
     <title><?php echo get_bloginfo( 'name' ); ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
-    <link href="<?php bloginfo('template_directory');?>/blog.css" rel="stylesheet">
+    <!--<link href="<?php bloginfo('template_directory');?>/blog.css" rel="stylesheet">-->
+    <link href="<?php bloginfo('template_directory');?>/css/demo.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/css/normalize.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/css/style2.css" rel="stylesheet">
 
+    <script src="<?php bloginfo('template_directory');?>/js/modernizr-custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,20 +26,13 @@
     <?php wp_head();?>
   </head>
 
-  <body>
-
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href=".">Home</a>
-          <?php wp_list_pages( '&title_li=' ); ?>
-        </nav>
-      </div>
-    </div>
+  <body class="demo-2">
 
     <div class="container">
-
-      <div class="blog-header">
-        <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
-      </div>
+      	<header class="codrops-header">
+			<h1><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a> <span><?php echo get_bloginfo( 'description' ); ?></span></h1>
+			<nav class="codrops-demos">
+				<?php wp_list_categories( '&title_li=&hide_empty=0' ) ?>
+				<?php wp_list_pages( '&title_li=' ); ?>
+			</nav>
+		</header>
