@@ -4,11 +4,11 @@
 	<?php 
 	$category_id = get_the_category()[0]->cat_ID; 
 	if ($category_id == 1) {
-		echo '<i class="fa fa-video-camera cat-icon"></i>';
+		echo '<i class="fa fa-video-camera fa-2 cat-icon"></i>';
 	} else if ($category_id == 2) {
-		echo '<i class="fa fa-internet-explorer cat-icon"></i>';
+		echo '<i class="fa fa-internet-explorer fa-2 cat-icon"></i>';
 	} else if ($category_id == 4) {
-		echo '<i class="fa fa-mobile cat-icon"></i>';
+		echo '<i class="fa fa-mobile fa-2 cat-icon"></i>';
 	}
 	?>
 
