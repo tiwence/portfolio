@@ -11,10 +11,10 @@
     <title><?php echo get_bloginfo( 'name' ); ?></title>
 
     <!-- Custom styles for this template -->
-    <!--<link href="<?php bloginfo('template_directory');?>/blog.css" rel="stylesheet">-->
     <link href="<?php bloginfo('template_directory');?>/css/demo.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/css/normalize.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/css/style2.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="<?php bloginfo('template_directory');?>/js/modernizr-custom.js"></script>
 
