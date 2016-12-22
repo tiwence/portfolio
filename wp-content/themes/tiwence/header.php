@@ -10,6 +10,8 @@
 
     <title><?php echo get_bloginfo( 'name' ); ?></title>
 
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Josefin+Sans" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('template_directory');?>/css/demo.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/css/normalize.css" rel="stylesheet">
@@ -32,7 +34,7 @@
       	<header class="codrops-header">
 			<h1><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a> <span><?php echo get_bloginfo( 'description' ); ?></span></h1>
 			<nav class="codrops-demos">
-				<?php wp_list_categories( '&title_li=&hide_empty=0' ) ?>
+				<?php wp_list_categories( '&title_li=&hide_empty=0&orderby=id&order=ASC' ) ?>
 				<?php wp_list_pages( '&title_li=' ); ?>
 			</nav>
 		</header>

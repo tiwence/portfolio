@@ -42,9 +42,13 @@ body {
 	width: 100vw;
 }
 
+h1 a {
+	font-family: 'Josefin Sans', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
 a {
 	outline: none;
-	color: #77d45b;
+	color: #d0b795;
 	text-decoration: none;
 }
 
@@ -84,10 +88,14 @@ button:focus {
 .codrops-header h1 span {
 	display: block;
 	padding: 0.5em 0 1em;
-	color: #999;
+	color: #ebebeb;
 	font-weight: normal;
 	font-size: 0.45em;
 	letter-spacing: 0;
+}
+
+.codrops-header a {
+	font-family: 'Josefin Sans', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 

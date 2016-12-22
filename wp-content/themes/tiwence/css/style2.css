@@ -1,3 +1,5 @@
+/*color: #77d45b;*/
+
 .grid {
 	position: relative;
 	margin: 0 auto;
@@ -32,6 +34,10 @@
 
 .img-wrap {
 	display: block;
+	/*border: 5px solid #999;*/
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:        	5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .img-wrap:focus,
@@ -103,6 +109,11 @@
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 	-webkit-backface-visibility: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:        	5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .preview--open .animate {
@@ -174,7 +185,7 @@
 }
 
 .description--preview p em {
-	color: #77d45b;
+	color: #d0b795;
 	padding: 0.4em 0 0 0;
 }
 
@@ -291,11 +302,12 @@
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
+	font-size: 20px!important;
 }
 
 .details .icon {
 	margin-right: 5px;
-	color: #77d45b;
+	color: #d0b795;
 }
 
 
@@ -307,14 +319,14 @@
 	padding: 0;
 	cursor: pointer;
 	vertical-align: top;
-	color: #6bd68a;
+	color: #ebebeb;
 	border: none;
 	background: none;
 }
 
 .action:hover,
 .action:focus {
-	color: #6bd68a;
+	color: #ebebeb;
 	outline: none;
 }
 
@@ -347,10 +359,10 @@
 }
 
 .page {
-    max-width: 50em;
+    max-width: 49em;
     margin: 0 auto;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width: 40em) {

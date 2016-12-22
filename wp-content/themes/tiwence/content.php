@@ -4,26 +4,21 @@
 	<?php 
 	$category_id = get_the_category()[0]->cat_ID; 
 	if ($category_id == 1) {
-		echo '<i class="fa fa-video-camera fa-2 cat-icon"></i>';
+		echo '<i class="cat-icon fa fa-film "></i>';
 	} else if ($category_id == 2) {
-		echo '<i class="fa fa-internet-explorer fa-2 cat-icon"></i>';
+		echo '<i class="cat-icon fa fa-link"></i>';
 	} else if ($category_id == 4) {
-		echo '<i class="fa fa-mobile fa-2 cat-icon"></i>';
+		echo '<i class="cat-icon fa fa-mobile"></i>';
 	}
 	?>
 
 		<div class="description description--grid">
-			<h3><a href="<?php echo get_post_custom_values($key = 'url')[0] ?>"><?php the_title(); ?></a></h3>
-			<p><?php the_content(); ?><!--<em>&mdash; <?php the_author(); ?></em>--></p>
+			<h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<p><?php the_content(); ?></p>
 			<div class="details">
 				<ul>
 					<li><i class="icon fa fa-calendar"></i><span><?php echo get_post_custom_values($key = 'date')[0] ?></span></li>
-					<li><i class="icon icon-focal_length"></i><span><a href="<?php the_permalink(); ?>">Lien</span></li>
-
-					<!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-					<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-					<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-					<li><i class="icon icon-iso"></i><span>80</span></li>-->
+					<li><i class="icon icon-focal_length"></i><span><a href="<?php get_post_custom_values($key = 'url')[0] ?>">Lien</span></li>
 				</ul>
 			</div>
 		</div>
