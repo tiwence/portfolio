@@ -10,7 +10,7 @@
 
     <title><?php echo get_bloginfo( 'name' ); ?></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Sans" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('template_directory');?>/css/demo.css" rel="stylesheet">

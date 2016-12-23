@@ -4,7 +4,7 @@
 	<?php 
 	$category_id = get_the_category()[0]->cat_ID; 
 	if ($category_id == 1) {
-		echo '<i class="cat-icon fa fa-film "></i>';
+		echo '<i class="cat-icon fa fa-film"></i>';
 	} else if ($category_id == 2) {
 		echo '<i class="cat-icon fa fa-link"></i>';
 	} else if ($category_id == 4) {
@@ -17,8 +17,8 @@
 			<p><?php the_content(); ?></p>
 			<div class="details">
 				<ul>
-					<li><i class="icon fa fa-calendar"></i><span><?php echo get_post_custom_values($key = 'date')[0] ?></span></li>
-					<li><i class="icon icon-focal_length"></i><span><a href="<?php get_post_custom_values($key = 'url')[0] ?>">Lien</span></li>
+					<li><i class="icon fa fa-calendar"></i><span><?php echo get_post_custom_values($key = 'date')[0]; ?></span></li>
+					<li><i class="icon icon-focal_length"></i><span><a href="<?php echo get_post_custom_values($key = 'url')[0]; ?>">Lien</span></li>
 				</ul>
 			</div>
 		</div>

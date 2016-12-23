@@ -185,7 +185,7 @@
 }
 
 .description--preview p em {
-	color: #d0b795;
+	color: #939393;
 	padding: 0.4em 0 0 0;
 }
 
@@ -307,7 +307,7 @@
 
 .details .icon {
 	margin-right: 5px;
-	color: #d0b795;
+	color: #939393;
 }
 
 
@@ -359,7 +359,7 @@
 }
 
 .page {
-    max-width: 49em;
+    max-width: 50em;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
